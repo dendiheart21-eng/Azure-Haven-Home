@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | Azure Haven Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="Home.html"><img src="Images/LOGO/Logo.png" alt="Azure Haven Logo" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <a href="Cart.html"><img src="Images/ATC.png" alt="Cart Icon" width="30px" height="30px"><span id="cart-count" class="cart-badge">0</span></a>
+            <img src="Images/SHITS/menu.png" alt="menu icon" class="menu-icon" 
+            onclick="menutoggle()">
+        </div>
+    </div>
+
+<!---Single Product Details--->
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="Images/WEBSITE PRODUCTS/6/3P.png" width="100%" id="product-img">
+
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="Images/WEBSITE PRODUCTS/6/3P.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="Images/WEBSITE PRODUCTS/6/1P.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="Images/WEBSITE PRODUCTS/6/4P.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="Images/WEBSITE PRODUCTS/6/2P.png" width="100%" class="small-img">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-2">
+            <p>Home / Sofas</p>
+            <h1> Horizon Calm Sofa</h1>
+            <h4>₱38,500.00</h4>
+            <input type="number" value="1" min="1">
+            <a href="#" data-product-id="6" class="btn">Add to Cart</a>
+
+            <h3>Product Details<i class="fa fa-indent"></i></h3>
+            <br>
+            <p>The Horizon Calm Sofa is made for homes that value luxurious comfort and 
+                architectural elegance. Its generous seating, supportive cushions, and 
+                sleek silhouette make it an inviting centerpiece for upscale living rooms 
+                and contemporary family spaces. Upholstered in a calm blue-gray tone, it 
+                delivers visual softness while maintaining a polished, high-end appearance. 
+                Designed to feel both welcoming and sophisticated, this sofa reflects the 
+                essence of Azure Haven Home: elegant living made effortless.</p>
+            <br>
+            <ul class="product-details-list">
+                <li>Category: Sofas</li>
+                <li>Estimated Weight: 114.6 lbs</li>
+                <li>Dimensions: 82.7" L x 34.6" W x 33.1" H</li>
+                <li>Material: Performance fabric upholstery, kiln-dried hardwood 
+                    frame, premium pocket foam cushions</li>
+                <li>Design: Clean-lined three-seater silhouette</li>
+                <li>Color: Soft Harbor Blue</li>
+                <li>Feature: Spacious and supportive seating</li>
+                <li>Style: Modern luxury</li>
+                <li>Use: Living rooms and receiving areas</li>
+            </ul>
+        </div>
+    </div>
+</div>    
+
+<!-------Title------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>More Products</h2>
+        </div>
+    </div>
+
+
+<!-------Product----->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4" onclick="window.location.href='Productdetails.html'">
+                <img src="Images/WEBSITE PRODUCTS/1/1P.png" alt="Chair">
+                <h4>Azure Crest Accent Chair</h4>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                    <i class="fa fa-solid fa-star"></i>
+                </div>
+                <p>₱12,950.00</p>
+            </div>
+            <div class="col-4" onclick="window.location.href='Productdetails2.html'">
+                <img src="Images/WEBSITE PRODUCTS/2/2P.png" alt="Chair">
+                <h4>Marina Luxe Lounge Chair</h4>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                    <i class="fa fa-solid fa-star"></i>
+                </div>
+                <p>₱18,500.00</p>
+            </div>
+            <div class="col-4" onclick="window.location.href='Productdetails3.html'">
+                <img src="Images/WEBSITE PRODUCTS/3/4P.png" alt="Chair">
+                <h4>Harbor Line Dining Chair</h4>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>₱6,950.00</p>
+            </div>
+            <div class="col-4" onclick="window.location.href='Productdetails4.html'">
+                <img src="Images/WEBSITE PRODUCTS/4/3P.png" alt="Table">
+                <h4>Tideview Coffee Table</h4>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                    <i class="fa fa-solid fa-star-half-stroke"></i> 
+                    </div>
+                <p>₱14,800.00</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" onclick="window.location.href='Productdetails5.html'">
+                <img src="Images/WEBSITE PRODUCTS/5/2P.png" alt="Table">
+                <h4>Blue Harbor Console Table</h4>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                </div>
+                <p>₱11,900.00</p>
+            </div>
+            <div class="col-3" onclick="window.location.href='Productdetails7.html'">
+                <img src="Images/WEBSITE PRODUCTS/7/2P.png" alt="Chair">
+                <h4>Sapphire Nest Bedside Table</h4>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>₱7,450.00</p>
+            </div>
+            <div class="col-3" onclick="window.location.href='Productdetails8.html'">
+                <img src="Images/WEBSITE PRODUCTS/8/1P.png" alt="Table">
+                <h4>Coastal Glow Writing Desk</h4>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                    </div>
+                <p>₱16,900.00</p>
+            </div>
+        </div>
+    </div>
+
+<!------Footer------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Why Azure Haven Home?</h3>
+                    <ul>
+                        <li>Made-to-order furniture</li>
+                        <li>Ships within 8 days nationwide</li>
+                        <li>30-day return guarantee</li>
+                        <li>COD & Bank Payments</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Images/LOGO/Logo.png" alt="Azure Haven Logo">
+                    <p>Made-to-order pieces crafted for homes that value comfort and sophistication and 
+                        timeless furniture designed to elevate everyday spaces with modern elegance.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <a href="FAQ.html"><li>FAQs</li></a>
+                        <a href="About.html"><li>About Us</li></a>
+                        <a href="FAQ.html"><li>Terms & Conditions</li></a>
+                        <a href="Contact.html"><li>Contact Us</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follows us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/azurehavenhome/"><li>Facebook</li></a>
+                        <a href="https://www.instagram.com/azurehavenhome/?igsh=N2xkaGtkbzE0ZWx3&fbclid=IwY2xjaw
+                        Ruz5RleHRuA2FlbQIxMABicmlkETFjZVBoV0NQZUM4TEhCTDZqc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5Mg
+                        ABHmE2QuUobYRnKMLyqeo_OjZ2yIzrY2ceMVS28EzqlpOBUhU4RJB1YySo_wMV_aem_ErH7TebVg8AXtqJOJcyUQQ"><li>Instagram</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Ecommerce Website</p>
+        </div>
+    </div>
+
+<!-------JS for toggle menu------->
+    <script src="products.js"></script>
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px"){
+                menuitems.style.maxHeight = "240px";
+            }else{
+                menuitems.style.maxHeight = "0px";
+            }
+        }        // Update cart badge
+        function updateCartBadge() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('cart-count').textContent = totalItems;
+        }
+
+        window.onload = function() {
+            updateCartBadge();
+            const addToCartBtn = document.querySelector('.col-2 .btn');
+            if (addToCartBtn) {
+                addToCartBtn.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const quantityInput = document.querySelector('.col-2 input');
+                    const quantity = parseInt(quantityInput?.value, 10) || 1;
+                    const productId = addToCartBtn.dataset.productId;
+                    if (productId) {
+                        addToCart(productId, quantity);
+                    }
+                });
+            }
+        };</script>
+
+<!-------JS for product gallery------->
+    <script>
+        var productimg = document.getElementById("product-img");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            productimg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            productimg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            productimg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            productimg.src = smallimg[3].src;
+        }
+    </script>
+</body>
+</html> 

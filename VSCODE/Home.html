@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Haven Home | E-commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="Home.html"><img src="Images/LOGO/Logo.png" alt="Azure Haven Logo" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <a href="Cart.html"><img src="Images/ATC.png" alt="Cart Icon" width="30px" height="30px"><span id="cart-count" class="cart-badge">0</span></a>
+            <img src="Images/SHITS/menu.png" alt="menu icon" class="menu-icon" 
+            onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h3>ELEGANCE IN EVERY DETAIL</h3>
+                <h1>Modern Furniture for Refined Living</h1>
+                <p>Discover premium made-to-order furniture designed to bring calm sophistication, timeless 
+                    comfort, and modern beauty into your home.</p>
+                <a href="Products.html" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="Images/HERO/Hero.png" alt="Hero Image">
+            </div>
+        </div>
+    </div>
+  </div>
+
+<!------ featured categories ------>
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="Products.html">
+                        <img src="Images/WEBSITE PRODUCTS/3/2P.png" alt="Chairs Category">
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="Products.html">
+                        <img src="Images/WEBSITE PRODUCTS/4/4P.png" alt="Tables Category">
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="Products.html">
+                        <img src="Images/WEBSITE PRODUCTS/6/1P.png" alt="Seating Category">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------ featured products ------>
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="Productdetails3.html">
+                    <img src="Images/20x24/FP/1.png" alt="Chair">
+                </a>
+                <a href="Productdetails3.html">
+                    <h4>Harbor Line Dining Chair</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>₱6,950.00</p>
+            </div>
+            <div class="col-4">
+                <a href="Productdetails2.html">
+                    <img src="Images/20x24/FP/2.png" alt="Chair">
+                </a>
+                <a href="Productdetails2.html">
+                    <h4>Marina Luxe Lounge Chair</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                    <i class="fa fa-solid fa-star"></i>
+                </div>
+                <p>₱18,500.00</p>
+            </div>
+            <div class="col-4">
+                <a href="Productdetails5.html">
+                    <img src="Images/20x24/FP/3.png" alt="Table">
+                </a>
+                <a href="Productdetails5.html">
+                    <h4>Blue Harbor Console Table</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                    </div>
+                <p>₱11,900.00</p>
+            </div>
+            <div class="col-4">
+                <a href="Productdetails7.html">
+                    <img src="Images/20x24/FP/4.png" alt="Table">
+                </a>
+                <a href="Productdetails7.html">
+                    <h4>Sapphire Nest Bedside Table</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>₱7,450.00</p>
+            </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="Productdetails.html">
+                    <img src="Images/20x24/LP/1.png" alt="Chair">
+                </a>
+                <a href="Productdetails.html">
+                    <h4>Azure Crest Accent Chair</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                    <i class="fa fa-solid fa-star"></i>
+                </div>
+                <p>₱12,950.00</p>
+            </div>
+            <div class="col-4">
+                <a href="Productdetails4.html">
+                    <img src="Images/20x24/LP/2.png" alt="Chair">
+                </a>
+                <a href="Productdetails.html">
+                    <h4>Tideview Coffee Table</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>₱14,800.00</p>
+            </div>
+            <div class="col-4">
+                <a href="Productdetails6.html">
+                    <img src="Images/20x24/LP/3.png" alt="Table">
+                </a>
+                <a href="Productdetails6.html">
+                    <h4>Horizon Calm Sofa</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                    <i class="fa fa-solid fa-star"></i>
+                    </div>
+                <p>₱38,500.00</p>
+            </div>
+            <div class="col-4">
+                <a href="Productdetails8.html">
+                    <img src="Images/20x24/LP/4.png" alt="Table">
+                </a>
+                <a href="Productdetails8.html">
+                    <h4>Coastal Glow Writing Desk</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>        
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i> 
+                </div>
+                <p>₱16,900.00</p>
+            </div>
+        </div>
+    </div>
+
+<!--------Offer------->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="Images/20x24/EO/2.png" alt="Offer Image" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively available on Azure Haven Home</p>
+                    <h1>Marina Luxe Lounge Chair</h1>
+                    <small>The Marina Luxe Lounge Chair offers a graceful blend of spacious 
+                        comfort and contemporary elegance. Designed with a wider seat and 
+                        deeper cushioning, it invites moments of rest, enhancing the 
+                        ambiance of home.</small>
+                    <a href="Productdetails2.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------Testimonials------>
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"The Chair is the best purchase I've ever made! Unbelievable comfort 
+                        and style. The azure hue is perfect!"</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>    
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> 
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <img src="Images/20x24/FB/1.png" alt="Customer 1">
+                    <h3>Sarah J.</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"The Azure Haven Home range has completely transformed our space.
+                        The quality and style are unmatched. Everything feels more cohesive
+                        and calm."</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>    
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> 
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="Images/20x24/FB/2.png" alt="Customer 1">
+                    <h3>Mark D.</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"The quality and craftmanship of our new Azure Haven Home Sofa and table
+                        exceeded all our expectations. Our living are feels incredibly refreshed
+                        and sophisticated. The Materials are durable yet luxurious, and the design 
+                        brings such a cohesive stylish calm to the space. We can't imagine our home 
+                        without it! Special thanks to the design team for their guidance. Truly
+                        Outstanding."</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>    
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> 
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="Images/20x24/FB/3.png" alt="Customer 1">
+                    <h3>Michaela B.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------brands-------->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="Images/LOGO/Brands/1.png" alt="Brand 1">
+                </div>
+                <div class="col-5">
+                    <img src="Images/LOGO/Brands/2.png" alt="Brand 2">
+                </div>
+                <div class="col-5">
+                    <img src="Images/LOGO/Brands/3.png" alt="Brand 3">
+                </div>
+                <div class="col-5">
+                    <img src="Images/LOGO/Brands/4.png" alt="Brand 4">
+                </div>
+                <div class="col-5">
+                    <img src="Images/LOGO/Brands/5.png" alt="Brand 5">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------Footer------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Why Azure Haven Home?</h3>
+                    <ul>
+                        <li>Made-to-order furniture</li>
+                        <li>Ships within 8 days nationwide</li>
+                        <li>30-day return guarantee</li>
+                        <li>COD & Bank Payments</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Images/LOGO/Logo.png" alt="Azure Haven Logo">
+                    <p>Made-to-order pieces crafted for homes that value comfort and sophistication and 
+                        timeless furniture designed to elevate everyday spaces with modern elegance.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <a href="FAQ.html"><li>FAQs</li></a>
+                        <a href="About.html"><li>About Us</li></a>
+                        <a href="FAQ.html"><li>Terms & Conditions</li></a>
+                        <a href="Contact.html"><li>Contact Us</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follows us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/azurehavenhome/"><li>Facebook</li></a>
+                        <a href="https://www.instagram.com/azurehavenhome/?igsh=N2xkaGtkbzE0ZWx3&fbclid=IwY2xjaw
+                        Ruz5RleHRuA2FlbQIxMABicmlkETFjZVBoV0NQZUM4TEhCTDZqc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5Mg
+                        ABHmE2QuUobYRnKMLyqeo_OjZ2yIzrY2ceMVS28EzqlpOBUhU4RJB1YySo_wMV_aem_ErH7TebVg8AXtqJOJcyUQQ"><li>Instagram</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Ecommerce Website</p>
+        </div>
+    </div>
+
+<!-------JS for toggle menu------->
+    <script src="products.js"></script>
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px"){
+                menuitems.style.maxHeight = "240px";
+            }else{
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+
+        // Update cart badge
+        function updateCartBadge() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('cart-count').textContent = totalItems;
+        }
+
+        window.onload = updateCartBadge;
+    </script>
+
+</body>
+</html>

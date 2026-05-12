@@ -49,15 +49,15 @@
         <table>
             <tr>
                 <td>Subtotal</td>
-                <td>₱20,850.00</td>
+                <td>&#8369;20,850.00</td>
             </tr>
             <tr>
                 <td>VAT</td>
-                <td>₱1,000.00</td>
+                <td>&#8369;1,000.00</td>
             </tr>
             <tr>
                 <td>Total</td>
-                <td>₱21,850.00</td>
+                <td>&#8369;21,850.00</td>
             </tr>
         </table>
     </div>
@@ -142,14 +142,14 @@
                             <img src="${item.images[0]}" alt="${item.name}">
                             <div>
                                 <p>${item.name}</p>
-                                <small>Price: ₱${item.price.toLocaleString()}.00</small>
+                                <small>Price: &#8369;${item.price.toLocaleString()}.00</small>
                                 <br>
                                 <a href="#" onclick="removeFromCart(${item.id})">Remove</a>
                             </div>
                         </div>
                     </td>
                     <td><input type="number" value="${item.quantity}" min="1" onchange="updateQuantity(${item.id}, this.value)"></td>
-                    <td>₱${itemTotal.toLocaleString()}.00</td>
+                    <td>&#8369;${itemTotal.toLocaleString()}.00</td>
                 `;
                 tbody.appendChild(row);
             });
@@ -158,9 +158,9 @@
             const tax = subtotal * 0.05; // Assuming 5% tax
             const total = subtotal + tax;
 
-            document.querySelector('.total-price table tr:nth-child(1) td:last-child').textContent = `₱${subtotal.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-            document.querySelector('.total-price table tr:nth-child(2) td:last-child').textContent = `₱${tax.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-            document.querySelector('.total-price table tr:nth-child(3) td:last-child').textContent = `₱${total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            document.querySelector('.total-price table tr:nth-child(1) td:last-child').innerHTML = '&#8369;' + subtotal.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            document.querySelector('.total-price table tr:nth-child(2) td:last-child').innerHTML = '&#8369;' + tax.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            document.querySelector('.total-price table tr:nth-child(3) td:last-child').innerHTML = '&#8369;' + total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         }
 
         function removeFromCart(productId) {
